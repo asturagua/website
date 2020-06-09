@@ -9,12 +9,10 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'photos', component: GalleryComponent },
+  { path: '', component: HomeComponent }
 ];
 
 
@@ -22,7 +20,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    GalleryComponent,
     HomeComponent,
   ],
   imports: [
