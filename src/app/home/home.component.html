@@ -17,7 +17,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(0,2)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}
@@ -32,7 +32,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(2,4)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}
@@ -52,7 +52,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(4,6)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}
@@ -67,7 +67,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(6,8)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}
@@ -88,7 +88,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(8,10)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}
@@ -109,7 +109,7 @@
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(10,12)'>
                 <mat-card>
-                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
                         <p>
                             {{image.description}}

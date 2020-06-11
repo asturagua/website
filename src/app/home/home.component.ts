@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Image } from 'src/app/interface/image';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { Image } from 'src/app/interface/image';
 })
 export class HomeComponent implements OnInit {
   readonly images: Image[];
+  readonly imagesPath: String;
 
   constructor() {
     this.images = [
@@ -25,6 +27,8 @@ export class HomeComponent implements OnInit {
       {path: 'pride.jpg', description: 'Happy pride.', title: null},
       {path: 'fountainrainbow.jpg', description: 'Rainbow', title: null},
     ];
+
+    this.imagesPath = environment.production ? '/website/assets/images' : '/assets/images';
   }
 
   ngOnInit(): void { 
