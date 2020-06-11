@@ -7,3 +7,117 @@
     &mdash; Kevin Toy (@CLG_PewPewU) 
     <a href="https://twitter.com/CLG_PewPewU/status/1174090369560014848?ref_src=twsrc%5Etfw">September 17, 2019</a>
 </blockquote> 
+
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Insects</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="4" rowHeight="3:5">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(0,2)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(2,4)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Cats</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(4,6)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-grid-list cols="4" rowHeight="3:5">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(6,8)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Green</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-grid-list cols="4" rowHeight="3:5">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(8,10)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Other</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(10,12)'>
+                <mat-card>
+                    <a href='/assets/images/{{image.path}}'><img mat-card-image src='/assets/images/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+</mat-accordion>

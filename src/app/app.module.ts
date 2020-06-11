@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatRippleModule } from '@angular/material/core';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -32,6 +34,8 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatExpansionModule,
     MatCardModule,
+    MatRippleModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
