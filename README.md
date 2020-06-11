@@ -14,7 +14,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Deploying to github-pages is simple: (https://angular.io/guide/deployment#deploy-to-github-pages)
+Deploying to github-pages is simple: https://angular.io/guide/deployment#deploy-to-github-pages
+
+Build with:
+ 
+<code>ng build --prod --output-path docs --base-href /website/</code>
 
 ## Running unit tests
 
