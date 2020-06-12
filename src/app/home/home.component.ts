@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit {
       {path: 'ripcat.jpg', description: 'Save me.', title: null},
       {path: 'leaf.jpg', description: 'Photogenic leaf.', title: null},
       {path: 'flower.jpg', description: 'Tree flower.', title: null},
+      {path: 'doggos.jpg', description: 'Dog hungers.', title: null},
+      {path: 'snail.jpg', description: 'Moving shell.', title: null},
       {path: 'pride.jpg', description: 'Happy pride.', title: null},
       {path: 'fountainrainbow.jpg', description: 'Rainbow', title: null},
     ];

@@ -102,10 +102,10 @@
 
     <mat-expansion-panel>
         <mat-expansion-panel-header>
-            <mat-panel-title>Other</mat-panel-title>
+            <mat-panel-title>Other Animal</mat-panel-title>
         </mat-expansion-panel-header>
 
-        <mat-grid-list cols="4" rowHeight="1:1">
+        <mat-grid-list cols="4" rowHeight="3:5">
             <mat-grid-tile></mat-grid-tile>
             <mat-grid-tile *ngFor='let image of images.slice(10,12)'>
                 <mat-card>
@@ -120,4 +120,26 @@
             <mat-grid-tile></mat-grid-tile>
         </mat-grid-list>
     </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Other</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile *ngFor='let image of images.slice(12,14)'>
+                <mat-card>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+
 </mat-accordion>
