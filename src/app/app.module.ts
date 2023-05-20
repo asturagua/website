@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [
     RouterModule.forRoot(

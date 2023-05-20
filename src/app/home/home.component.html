@@ -1,21 +1,34 @@
-<blockquote class="twitter-tweet tw-align-center">
-    <p lang="en" dir="ltr">
-        Tell me why bro is out here holding CS angles on me... 
-        <a href="https://t.co/nmvJWPX5X0">pic.twitter.com/nmvJWPX5X0</a>
-        <img src="https://pbs.twimg.com/media/EEs09ksUEAEXU3p?format=jpg&name=small" />
-    </p>
-    &mdash; Kevin Toy (@CLG_PewPewU) 
-    <a href="https://twitter.com/CLG_PewPewU/status/1174090369560014848?ref_src=twsrc%5Etfw">September 17, 2019</a>
-</blockquote> 
-
+<h1>Hi! I'm Cindy Wu.</h1>
+<p>-Insert image of me-</p>
+<p>I've been a professional software developer for about {{yearsOfWork}} years.</p>
+<p>In my free time I sometimes play video games and sometimes do various crafts.</p>
+<p>I might also like taking pictures of things outside.</p>
+<!--Make it easier to update what images are showing-->
 <mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Crafts</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="3" rowHeight="3:5">
+            <mat-grid-tile *ngFor='let image of images.slice(0,3)'>
+                <mat-card>
+                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
+                    <mat-card-content>
+                        <p>
+                            {{image.description}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
     <mat-expansion-panel>
         <mat-expansion-panel-header>
             <mat-panel-title>Insects</mat-panel-title>
         </mat-expansion-panel-header>
         <mat-grid-list cols="4" rowHeight="3:5">
             <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(0,2)'>
+            <mat-grid-tile *ngFor='let image of images.slice(3,5)'>
                 <mat-card>
                     <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
@@ -30,42 +43,7 @@
 
         <mat-grid-list cols="4" rowHeight="1:1">
             <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(2,4)'>
-                <mat-card>
-                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
-                    <mat-card-content>
-                        <p>
-                            {{image.description}}
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile></mat-grid-tile>
-        </mat-grid-list>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>Cats</mat-panel-title>
-        </mat-expansion-panel-header>
-        <mat-grid-list cols="4" rowHeight="1:1">
-            <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(4,6)'>
-                <mat-card>
-                    <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
-                    <mat-card-content>
-                        <p>
-                            {{image.description}}
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile></mat-grid-tile>
-        </mat-grid-list>
-
-        <mat-grid-list cols="4" rowHeight="3:5">
-            <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(6,8)'>
+            <mat-grid-tile *ngFor='let image of images.slice(5,7)'>
                 <mat-card>
                     <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
@@ -86,7 +64,7 @@
 
         <mat-grid-list cols="4" rowHeight="3:5">
             <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(8,10)'>
+            <mat-grid-tile *ngFor='let image of images.slice(7,9)'>
                 <mat-card>
                     <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
@@ -107,7 +85,7 @@
 
         <mat-grid-list cols="4" rowHeight="3:5">
             <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(10,12)'>
+            <mat-grid-tile *ngFor='let image of images.slice(9,11)'>
                 <mat-card>
                     <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
@@ -128,7 +106,7 @@
 
         <mat-grid-list cols="4" rowHeight="1:1">
             <mat-grid-tile></mat-grid-tile>
-            <mat-grid-tile *ngFor='let image of images.slice(12,14)'>
+            <mat-grid-tile *ngFor='let image of images.slice(11,13)'>
                 <mat-card>
                     <a href='{{imagesPath}}/{{image.path}}'><img mat-card-image src='{{imagesPath}}/{{image.path}}'></a>
                     <mat-card-content>
